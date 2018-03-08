@@ -5,6 +5,7 @@ Vue.filter('small',function(value){
    	if(num[1]){
    	 return '.'+num[1]
    	}else{
-   	return ''
+   		return ''
    	}	
+    
 })

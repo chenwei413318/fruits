@@ -10,7 +10,10 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+<<<<<<< HEAD
    
+=======
+>>>>>>> 7939edcc566939131a944f2ed46d6298e76951a6
      proxyTable: {
      '/gy':{
     		target:'https://wap.fruitday.com/',
