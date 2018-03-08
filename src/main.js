@@ -9,10 +9,13 @@ Vue.config.productionTip = false
 import '../node_modules/swiper/dist/css/swiper.min.css'
 //config
 import config from './modules/config'
+//store
+import store from  './store'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   components: { App },
+  store,
   template: '<App/>'
 })
