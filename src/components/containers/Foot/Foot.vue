@@ -21,11 +21,7 @@ export default {
 	data () {
 	    return {
 	      navs:[
-<<<<<<< HEAD
 	        {id:1,title:'首页',path:'/',class:'fa fa-home'},
-=======
-	        {id:1,title:'首页',path:'/home',class:'fa fa-home'},
->>>>>>> 完成列表页
 	        {id:2,title:'分类',path:'/list',class:'fa fa-list'},
 	        {id:3,title:'购物车',path:'/shop',class:'fa fa-shopping-cart'},
 	        {id:4,title:'我的果园',path:'/mine',class:'fa fa-user-o'},
@@ -37,16 +33,7 @@ export default {
 
 }    
 </script>
-<<<<<<< HEAD
-<style lang="scss" scoped>
-	.main-nav{
-		    
-		    position: fixed;
-		    
-		    bottom: 0;
-		    left: 0;
-		    width: 100%;
-=======
+
 <style lang="scss">
 	.main-nav{
 		    top: auto;
@@ -54,7 +41,6 @@ export default {
 		    left: 0;
 		    width: 100%;
 		    position: fixed;
->>>>>>> 完成列表页
 		    display: -webkit-box;
 		    display: -moz-box;
 		    display: -ms-box;
@@ -65,10 +51,6 @@ export default {
 		    height: .42rem;
 		    font-size: .1rem;
 		    line-height: 1.2;
-<<<<<<< HEAD
-		    
-=======
->>>>>>> 完成列表页
 		 .footer-item{
 		 	    position: relative;
 			    width: 100%;

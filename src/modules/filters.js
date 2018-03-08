@@ -7,5 +7,4 @@ Vue.filter('small',function(value){
    	}else{
    	return ''
    	}	
-    
 })
