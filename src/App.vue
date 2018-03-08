@@ -1,22 +1,26 @@
 <template>
   <div id="app">
     <!--<home-header></home-header>-->
-    <router-view/>
     <!--<home-footer></home-footer>-->
+  	<router-view></router-view>
+   <app-foot></app-foot>
+    
   </div>
 </template>
 
 <script>
 //import HomeHeader from './components/containers/Home/Header.vue'
-import HomeFooter from './components/containers/Foot/Foot.vue'
+
+	import AppFoot from './components/containers/Foot/Foot.vue'
 export default {
-  name: 'App',
-  components:{HomeFooter}
+  name: 'Foot',
+  components:{
+  	AppFoot
+  }
 }
 </script>
 
 <style lang="scss">
-
 @import './stylesheets/_reset.scss';
 @import './stylesheets/_common.scss';
 </style>

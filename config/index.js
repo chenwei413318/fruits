@@ -10,8 +10,13 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+<<<<<<< HEAD
     proxyTable: {
     	'/gy':{
+=======
+     proxyTable: {
+     '/gy':{
+>>>>>>> 完成列表页
     		target:'https://wap.fruitday.com/',
     		pathRewrite:{
     			'^/gy':''
