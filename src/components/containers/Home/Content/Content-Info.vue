@@ -1,13 +1,14 @@
+
 <template>
-	<div class="hot-show">
+	<div class="fruits-info">
 		<!--<img width="100%" src="../../../../static/images/hot.jpg"/>-->
 		<div class="hot-show-box">
 			<div class="img-box">
-				<img id="img-box" src="../../../../static/images/img-box.jpg"/>
+				<img id="img-box" :src="decinfo.image" alt=""/>
 			</div>
 			<div class="desc">
-				<h5>巨无霸佳沛意大利金奇异果</h5>
-				<p>甜蜜巨能量 一手握不住</p>
+				<h5>{{decinfo.title}}</h5>
+				<p>{{decinfo.subtitle}}</p>
 				<div class="tag">限量供应</div>
 				<div class="desc-price">
 					<span class="desc-money">
@@ -21,14 +22,17 @@
 	</div>
 </template>
 
+
 <script>
-	export default {
-		name:'hot-show'
-	}
+
+export default {
+  name: 'fruits-info',
+  props:['decinfo']
+}
 </script>
 
 <style lang="scss">
-	.hot-show{
+	.fruits-info{
 		background: #FFFFFF;
 		.hot-show-box{
 			position: relative;
@@ -104,6 +108,7 @@
     				text-align: left;
     				line-height: normal;
     				top: 0.05rem;
+					width:1.9rem;
     				.desc-money{
     					    display: block;
 						    color: #ff8000;

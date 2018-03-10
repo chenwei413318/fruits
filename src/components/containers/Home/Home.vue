@@ -2,19 +2,20 @@
     <div class="home">
         <home-header></home-header>
         <home-banner></home-banner>
-        <home-show></home-show>
-        <fruit-box-hot></fruit-box-hot>
+        <Content></Content>
+         
     </div>
 </template>
 
 <script>
 import HomeHeader from './Header.vue'
 import HomeBanner from './Banner.vue'
-import HomeShow from './Show.vue'
-import FruitBoxHot from './FruitBoxHot.vue'
+// import HomeShow from './Show.vue'
+// import FruitBoxHot from './FruitBoxHot.vue'
+import Content from './Content/Content'
     export default{
         name:"home",
-        components:{HomeHeader,HomeBanner,HomeShow,FruitBoxHot}
+        components:{HomeHeader,HomeBanner,Content}
     }
 </script>
 

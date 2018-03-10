@@ -1,34 +1,44 @@
 <template>
-	<div class="hot-show">
-		<!--<img width="100%" src="../../../../static/images/hot.jpg"/>-->
-		<div class="hot-show-box">
-			<div class="img-box">
-				<img id="img-box" src="../../../../static/images/img-box.jpg"/>
-			</div>
-			<div class="desc">
-				<h5>巨无霸佳沛意大利金奇异果</h5>
-				<p>甜蜜巨能量 一手握不住</p>
-				<div class="tag">限量供应</div>
-				<div class="desc-price">
-					<span class="desc-money">
-						￥78 /
-						<em>6个</em>
-					</span>
-					<i class="fa fa-plus-circle fa-2x"></i>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="last-item">
+    <div class="last-itemtitle">
+      <a class="title"  href="#">
+        <img :src="lastTitle[0].content[0].image" title="果园热卖" width="100%">
+      </a>
+    </div>
+    <div v-for="(goodsItem,i) in goodsItem" :key="i">
+    <div class="hot-show-box">
+        <div class="img-box">
+          <img id="img-box" :src="goodsItem.image" alt=""/>
+        </div>
+        <div class="desc">
+          <h5>{{goodsItem.title}}</h5>
+          <p>{{goodsItem.subtitle}}</p>
+          <div class="desc-price">
+            <span class="desc-money">
+              ￥{{goodsItem.price}} /
+              <em>6个</em>
+            </span>
+            <i class="fa fa-plus-circle fa-2x"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+   </div>
 </template>
 
+
+
+
 <script>
-	export default {
-		name:'hot-show'
-	}
+export default {
+  name: 'last-item',
+  props:['lastTitle','goodsItem']
+}
 </script>
 
 <style lang="scss">
-	.hot-show{
+	.last-item{
+		margin-top:0.2rem;
 		background: #FFFFFF;
 		.hot-show-box{
 			position: relative;
@@ -104,6 +114,7 @@
     				text-align: left;
     				line-height: normal;
     				top: 0.05rem;
+						width:1.9rem;
     				.desc-money{
     					    display: block;
 						    color: #ff8000;

@@ -1,14 +1,15 @@
+
 <template>
 	<div class="fruit-banner">
-		<div class="box">
+		<div class="box" v-for="(img,i) in info">
 			<div class="img-box">
-				<img id="img-box" src="../../../../static/images/mangguo.jpg"/>
+				<img id="img-box" :src="img.image"/>
 			</div>
-			<p>金蜜香芒果</p>
+			<p>{{img.title}}</p>
 			<div class="price">
 				<span class="money">
-					￥53.8/
-					<em>2kg</em>
+					￥{{img.price}}/
+					<em>{{img.volume}}</em>
 				</span>
 				<i class="fa fa-plus-circle fa-2x"></i>
 			</div>
@@ -16,9 +17,13 @@
 	</div>
 </template>
 
+
+
+
 <script>
 	export default {
-		name:'fruit-banner'
+		name:'fruit-banner',
+		props:['info']
 	}
 </script>
 
@@ -34,8 +39,8 @@
 		.box{
 			width: 112px;
 			height: 170px;
-			background: cornflowerblue;
-			margin-right: 10px;
+			background: #fff;
+			
 			padding: .1rem .08rem .15rem;
 			padding-bottom: 0;
 			.img-box{
