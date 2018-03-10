@@ -4,11 +4,11 @@ Vue.use(Vuex)
 
 
 import position from './position'
-
+ import particles from './particles'
 
 const store = new Vuex.Store({
     modules:{
-        position
+        position,particles
     }
 })
 

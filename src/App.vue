@@ -8,15 +8,14 @@
 
 <script>
 //import HomeHeader from './components/containers/Home/Header.vue'
-import HomeFooter from './components/containers/Foot/Foot.vue'
+// import HomeFooter from './components/containers/Foot/Foot.vue'
 export default {
-  name: 'App',
-  components:{HomeFooter}
+  name: 'app',
+  
 }
 </script>
 
 <style lang="scss">
-
 @import './stylesheets/_reset.scss';
 @import './stylesheets/_common.scss';
 </style>

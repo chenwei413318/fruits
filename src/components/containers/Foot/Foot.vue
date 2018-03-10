@@ -37,7 +37,7 @@ export default {
 	.main-nav{
 		    
 		    position: fixed;
-		    
+		    top:auto;
 		    bottom: 0;
 		    left: 0;
 		    width: 100%;
