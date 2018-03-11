@@ -27,12 +27,12 @@ export default {
 	methods:{
 	  		gettitle (id) {
     		axios.get(config.host+'gy/v3/product/sub_category_list?store_id_list=3&class2_id='+this.class2Id+'&class3_id='+id+'&sort_type=1&tms_region_type=1').then(res=>{	
-//com/v3/product/sub_category_list?store_id_list=3&class2_id=310&class3_id=320&sort_type=1&tms_region_type=1
+
     			this.titles = res.data.data.brotherClass
     			this.bigs = res.data.data.fatherClass
     			this.products = res.data.data.productGroup
 				console.log(this.furitli)
-    			 console.log(res.data.data)
+    			 console.log(res.data.data.productGroup)
     		})
     	},
     	change (id) {

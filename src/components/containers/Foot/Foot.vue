@@ -1,9 +1,6 @@
 <template>
         <div class="app-foot">
 			<div class="main-nav">
-				
-			
-				
 					<router-link :to="nav.path" class="footer-item" v-for="nav in navs" :key="nav.id" >
 						<i :class="nav.class"></i>
 						<span>{{nav.title}}</span>

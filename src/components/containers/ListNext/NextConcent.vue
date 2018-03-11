@@ -17,8 +17,16 @@
 				</dl>
 				<div class="count">
 					<span class="num"></span>
-					<span class="plus">
-						<i class="fa fa-plus-circle"></i>
+					<span class="plus" @click="ADDGOOD({
+						id:product.id,
+						price:product.price,
+						name:product.product_name,
+						num:1,type:1,
+						volume:product.volume,
+						photo:product.photo,
+						
+						})">
+						<i class="fa fa-plus"></i>
 					</span>
 				</div>
 			</div>
@@ -27,11 +35,14 @@
 </template>
 
 <script>
-
+import {mapMutations} from 'vuex'
+import {ADDGOOD} from '../../../store/shops/const'
 	  export default {
 	  	name:'home-swiper',
 	  	props:['products',],
-	  	
+	  	methods:{
+	  		...mapMutations([ADDGOOD])
+	  	}
 	  	
 	  	
 	  }

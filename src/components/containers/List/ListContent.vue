@@ -90,6 +90,9 @@ export default {
 }    
 </script>
 <style lang="scss">
+	body{
+		background: #FFF;
+	}
 .list-content{
     padding-bottom: .42rem;
     display: block;

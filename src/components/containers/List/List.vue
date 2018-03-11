@@ -3,11 +3,13 @@
         <list-header :toggle = 'toggle'></list-header>  
         <list-content :isShow = "isShow" :toggle = 'toggle'></list-content>
         <search-box :isShow = "isShow" :toggle = 'toggle'> </search-box >
-        
+         
         </div>
+       
 </template>
 
 <script>
+import AppFoot from '../Foot/Foot.vue' 
 import ListHeader from './Header'
 import ListContent from './ListContent'
 import SearchBox from './SearchBox'
